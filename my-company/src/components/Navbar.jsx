@@ -7,7 +7,8 @@ function Navbar() {
         display: 'flex',
         gap: '20px',
         padding: '1rem',
-        background: '#f4f4f4',
+        backgroundColor: '#f4f4f4',
+        justifyContent: 'center',
         borderBottom: '1px solid #ccc',
         marginBottom: '20px'
     }
