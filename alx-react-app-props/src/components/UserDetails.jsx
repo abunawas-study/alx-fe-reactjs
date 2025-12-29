@@ -1,4 +1,10 @@
-function UserDetails({ userData }) {
+import {useContext} from 'react';
+import {UserContext} from '../UserContext';
+
+
+function UserDetails() {
+  const userData = useContext(UserContext);
+  if (!userData) return <p>LOADING.....</p>;
   return (
     <div>
       <p>Name: {userData.name}</p>
